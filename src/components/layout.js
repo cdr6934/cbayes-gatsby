@@ -30,6 +30,7 @@ export default function Layout({
           <Link to="/">{meta.title}</Link>
           <nav>
             <Link to="/about">About</Link>
+            <Link to="/portfolio">Portfolio</Link>
           </nav>
         </header>
         <main className={content}>{children}</main>
