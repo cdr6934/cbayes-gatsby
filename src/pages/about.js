@@ -5,12 +5,14 @@ import Layout from '../components/layout.js';
 export default function AboutPage({ data }) {
     return (
      <Layout
-     title="About This Site"
+     title="About"
      description="More information about this site."
      >
          <h1>About this site</h1>
-    
-         <Link to="/">Back to home</Link>
+        <p>
+            As a fan of new technologies, I have spent the last 5 years persuing a passion of mine in new media art. This led
+            to the discovery of compassion. 
+        </p>
      </Layout>
     );
   }
