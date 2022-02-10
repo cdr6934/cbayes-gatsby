@@ -1,7 +1,9 @@
 
 import * as React from 'react';
+import {StaticImage} from 'gatsby-plugin-image'
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout.js';
+import {imageWrapper} from '../styles/index.module.css'
 
 export default function IndexPage() {
 
@@ -25,6 +27,15 @@ export default function IndexPage() {
   
   return (
     <Layout>
+      <div className={imageWrapper}>
+        <StaticImage
+        src="../images/20211205-012435925.jpg"
+        alt="Celestial Collisions"
+        placeholder="dominantColor"
+        width={300}
+        height={300}
+        />
+      </div>
       <h1>Welcome to the <b>CBayes Media Labs</b></h1>
       <p>
         You will find that this site is currently under construction.
