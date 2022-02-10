@@ -1,0 +1,112 @@
+---
+date: 2021-05-29
+title: What makes a good generative agent?
+description: Exploration of what generative art is and what it has become. 
+---
+
+
+# What makes an excellent generative agent?
+It’s an interesting question to consider and my objective is to glean a few nuggets of reflection as we consider what makes an excellent agent.
+
+## Beauty?
+It is said that “Beauty is in the eye of the beholder,” and there is much truth to that. Yet the question is, what makes something beautiful?
+
+* Is it when a piece of work resonates with more than the current society?
+
+* When it has been sold several times
+
+* When it lands in the Louvre
+
+And it could be all of the above, but many of those questions are contextualized in western thought. Could there be axioms of aesthetic or beauty? The other question I'd have to ask is, what is "good" art? Is good art pretty or beautiful?
+
+In generative systems, there are two dominant ways to bring most works to life:
+
+* Discrete mathematics
+    * grid-based systems, boolean algebra, etc.
+* Replicating natural phenomenon
+    * flocking, swarming, Perlin noise, etc
+
+What is interesting about it is that both of these are mimicking natural phenomena and it just might be that the natural world around us reworked in a digital work end up being our definition of “good art”.
+
+
+From Artblocks.io Kjetil Golid / Matt DesLauriers
+
+At the end of the day, I think that is it hard to define art as good and bad. You may like “bad art” according to critic A yet it is loved by critic B. So it just might be impossible to define beauty.
+
+## Flexibility
+
+When you create a generative agent, you have to give the code a mind of its own. It has to make decisions about the shape it should draw, location, color, thickness, and frequency, to name a few. These are all going to bring life to a piece, but without parameters or the “physics” of its output, it just creates a primordial soup of randomness.
+
+
+It's a good starting point, but it does not create much. Your brain is may currently be searching for some pattern. Now since a pseudorandom algorithm has generated this, there may be a pattern that a quantum computer may be able to distinguish, or there might be an iteration where the Mona Lisa will pop out through the evolutionary process. However, if we wait on evolution, we are looking at a long wait for it to pop out.
+
+## Subtle Pattern
+
+As I mentioned the "physics of a system," I think of physics as the parameters of the possible. For instance, gravity has a pull to earth; however, it doesn't pull us through the planet, and thus there are defined parameters on what is possible. In the same way, the parameters that we give to a system can help generate things that aren't rote or mechanical but have some fluidity to the mix.
+
+Take, for instance, this Pollock; though much randomness is at play, there are a few things to note, which we can call the pattern of his piece:
+
+* Color (which will be my next point)
+* Distribution
+* Drip Pattern
+
+Pollock chose to use the viscosity of the paint and gently drape the color onto the canvas. He could have used a brush or a bucket and string to make the matters. He also didn't just drop the paint onto the canvas; instead, he uses a yellowish background and then layers the colors on top of each other. Each color has its place; the red seems to only come out in certain areas to emphasize.
+
+And though you might find this to be too random for your liking, it does have a subtle pattern that has to be studied. Without careful consideration, we can look over the review of choices made in creating Number 8.
+
+https://uploads4.wikiart.org/number-8-detail(1).jpg!Large.jpg
+Number 8, Jackson Pollock
+
+## Color
+The point at which colors are chosen is essential to the mood and character of the image. Even random pixels in a photo of a few colors can create images that are pleasing to the eye. Following, I've got a palette of a couple of colors (left) I've used in some of my work.. it has a bit of energizing energy within the palette that is mixed.
+
+
+Let’s the Pollock image; we are going to extract the image's dominant colors. I'm going to cheat a little by pulling out my Swiss Army Knife for quick tasks called Mathematica. It's a symbolic representation language in mathematics with many excellent functions that can do a lot.
+
+```
+DominantColors[img, 7] // Add "HexRGBColor" to get hex colors 
+```
+
+The Wolfram Language code provides the most dominant colors; you can see that we used the same method of random squares with a color palette but generates very different energy. It’s very soulful and inviting with its warm tones of yellow (right image). But, shapes of the same size can be systematic.
+
+## Variation
+When the output of your code generates the same image, it is hardly generative. For instance, if the color is the only thing that changes, there is probably an end.
+
+
+Every one of these images is different but, they won't provide something incredibly different. So what happens when we start changing the size of the squares that are being generated?
+
+
+There is a big difference. Just adding an extra parameter of randomness that can help provide a bit more beauty to the system.
+
+## Simplicity in Complexity
+The beauty of the simple can be baked into a more complex piece.
+
+
+We have done something relatively simple; we have rotated the squares a bit based on a Perlin noise algorithm (gives a field of values) to provide the image a little more variety to the picture. Again simple rotation, but the complexity behind the rotation is all but hidden to the viewer of the photograph. Thus the pattern that the Perlin noise generates is interesting. When we start adding different amounts of color, we continue creating a variety of images as follows.
+
+
+As you can see, you can quickly bring many interesting little elements into the system to generate exciting patterns, to say the least. These all are just fundamental elements that can be moved into several exciting spaces depending on the creativity of your usage. A couple of things that come to mind are:
+
+* Weighting each color
+* Create margins and confine the randomness to space.
+* Confine in a circle
+* Circle packing
+* Other shapes
+* Stroke, etc.
+
+
+## What’s the story?
+The last element (though there are many more) is the story. I think there is much to be said about the context or the "why" behind a scene. It doesn't need to be an elaborate story, but what brings one to put together yet another piece of art.
+
+* Sheer drive to create or discover
+* Pursuit of excellence - creating something different than or better than before
+* Inspiration from other artwork
+* Driven by experience or emotion - breakup or disaster
+* Protested works (a.k.a dada movement)
+
+Stories drive our ability to empathize and connect, even when the story is just a product of passion. We as humans can understand why someone is passionate. We celebrate the likes of a Picasso due to his forging and being an explorer of new media. Even when I think of the passion that Beeple exhibits to create new content every day for ten years. There is a sense of wanting to root for him.
+
+## Good Agent?
+As I think through pieces like this, I know that it gives me the ability to hone the craft of creating and pairing the mechanics of a generative agent with creativity. I don't think there is a formula to success on what makes a great agent. It's all about creating your story and letting it live a life of its own.
+
+Sometimes it will create a great splash, and sometimes the art won't be heard. It is always more important to cherish the process and letting out the creativity than being listened to or selling NFTs, or ever being recognized.
